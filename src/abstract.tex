@@ -28,7 +28,6 @@
 
 \pagenumbering{arabic}
 \pagestyle{myheadings}
-\markright{LARIS/Polytech Angers \hfill SWIM 2023\hfill }
 \clearpage
 
 % DEFINITIONS
@@ -73,71 +72,15 @@
 	\bigskip
 
 	% KEYWORDS - required
-	{\noindent\bf Keywords:} Set union, Contractor programming, Geometric contractors, Localization
+	{\noindent\bf Keywords:} Set union, Contractor programming, Geometric contractors, Navigation
 
-	\subsection*{Introduction}
-		Set theory provides a fundamental structure for interval analysis, which must conform to its formalism~[1,2]. Trivial operations are defined on sets, such as union, intersection, deprivation, cartesian product, and projection. They should be applicable to intervals and therefore to contractors.
+	\subsection*{Biography}
 
-		In the case of union of adjacent contractors, typical paving algorithm bisects unnecessarily the boxes and then reveals the common boundary between the two sets as shown in Figure~\ref{fig:sepvisible}. This behavior noticed on contractors union is not consistent with the set union as defined in set theory.
+	Quentin Brateau received a double degree in Mobile Robotics, from ENSTA Bretagne, and in Dynamical Systems and Signals, from Polytech Angers, in 2021. He is currently a Ph.D. student at ENSTA Bretagne, in the Lab-STICC laboratory, on the control of torpedo-like AUV. His research is focused on the control and state estimation of such robots in constrained environments.
 
-	\subsection*{Geometric contractors}
-		Geometric contractors are a class of contractors based on geometric constraints, particularly used for localization in robotics~[2]. They can be used to characterize all possible robot states based on measurements. Geometric contractors are often defined for segments, which are one of the most simple geometric shapes. Then, by using set operators, more complex contractors can be built, such as contractors based on polygons~[3].
+	\subsection*{Abstract}
 
-		By defining more complex contractors in this way, adjacent boundary-overlapping sets appear at each vertex. Figure~\ref{fig:sepvisible} shows the paving of a visibility separator from a point, implemented by Rémy Guyonneau~[3]. The visibility separator works well on two individual segments but fails to characterize inner subpaving when dealing with polygons.
-
-		\begin{figure}[!htb]
-			\centering
-			\begin{subfigure}[t]{.31\textwidth}
-				\input{imgs/sepvisible_2.pgf}
-				\subcaption{Visibility separator with a segment obstacle}
-			\end{subfigure}%
-			\hfill
-			\begin{subfigure}[t]{.31\textwidth}
-				\input{imgs/sepvisible_1.pgf}
-				\subcaption{Visibility separator with a segment obstacle}
-			\end{subfigure}%
-			\hfill
-			\begin{subfigure}[t]{.31\textwidth}
-				\input{imgs/sepvisible.pgf}
-				\subcaption{Visibility separator with a polygon obstacle}
-			\end{subfigure}
-			\caption{Visibility separator for a point relative to obstacles. In red the set visible from the point, in blue the invisible set, in yellow the uncertain set.}
-			\label{fig:sepvisible}
-		\end{figure}
-
-	\subsection*{Main results}
-		Solutions can be found for geometric contractors to prevent the apparition of this common boundary. These solutions rely on contractor-specific solutions to avoid the use of contractors union when building more complex contractors, and some of these will be presented.
-		
-		However, this problem lays the foundations for a larger issue of the characterization of the union of two adjacent contractors in the general case, for which a solution has not yet been found. Figure~\ref{fig:general_case} shows a paving of the union of adjacent contractors on rings, on which the common boundary is appearing.
-
-		\begin{figure}[!htb]
-			\centering
-			\begin{subfigure}[t]{.48\textwidth}
-				\input{imgs/circle_discontinuity.pgf}
-				\subcaption{Union of three adjacent ring separators}
-			\end{subfigure}%
-			\hfill
-			\begin{subfigure}[t]{.48\textwidth}
-				\input{imgs/circle_expected.pgf}
-				\subcaption{Expected union of three adjacent ring separators}
-			\end{subfigure}
-			\caption{Union of adjacent boundary-overlapping separators. In red the inner set, in blue the outer set, in yellow the uncertain set.}
-			\label{fig:general_case}
-		\end{figure}
-
-	% REFERENCES
-	\subsection*{References}
-		\begin{description}
-
-			\item[{[1]}] L. Jaulin, M. Kieffer, O. Didrit, and E. Walter, Applied Interval Analysis: With Examples in Parameter and State Estimation, Robust Control and Robotics. Springer Science \& Business Media, 2012.
-			
-			\item[{[2]}] L. Jaulin and B. Desrochers, “Introduction to the algebra of separators with application to path planning,” Engineering Applications of Artificial Intelligence, vol. 33, pp. 141–147, Aug. 2014
-			% , doi: 10.1016/j.engappai.2014.04.010.
-			
-			\item[{[3]}] R. Guyonneau, “Méthodes ensemblistes pour la localisation en robotique mobile,” These de doctorat, Angers, 2013.
-			% Accessed: Jun. 06, 2023. [Online]. Available: \url{https://www.theses.fr/2013ANGE0046}
-				
-	\end{description}
+	The union of contractors is a fundamental operation in contractor programming. It is used to build more complex contractors from fundamental ones. However, the union of adjacent contractors can reveal the common boundary between the two contractors, which is not consistent with the set union as defined in set theory. This problem is particularly noticeable in geometric contractors, which are a class of contractors based on geometric constraints, and in which contractors are often adjacent. This presentation will focus on the problem statement, and provide some insight to build contractors on the union instead of relying on the union of contractors.
 
 \end{document}
         

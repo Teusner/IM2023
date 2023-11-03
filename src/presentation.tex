@@ -117,7 +117,7 @@
 
 % Title
 \title{Union of adjacent contractors}
-\date{\today}
+\date{November 03, 2023}
 \author{Quentin Brateau}
 \institute{ENSTA Bretagne}
 
@@ -509,9 +509,9 @@
                                 \draw<2->[Dandelion,thick] (3\kmunitlength,0) -- (4\kmunitlength,0) -- (4\kmunitlength,\kmunitlength) -- (3\kmunitlength,\kmunitlength) -- (3\kmunitlength,2\kmunitlength);
                                 \node<3->[alt=<4>{grp={gray}{1.9}{.9}}{grp={RubineRed}{1.9}{.9}}] (innerB) at (3\kmunitlength,0.5\kmunitlength) {};
                                 \node<4->[grp={RubineRed}{1.9}{.9}] (innerC) at (2\kmunitlength,1.5\kmunitlength) {};
-                                \draw<5-6>[RoyalBlue,thick] (2\kmunitlength,0) -- (3\kmunitlength,0);
-                                \draw<5-6>[RoyalBlue,thick] (2\kmunitlength,\kmunitlength) -- (3\kmunitlength,\kmunitlength);
-                                \draw<5-6>[RoyalBlue,thick] (2\kmunitlength,2\kmunitlength) -- (3\kmunitlength,2\kmunitlength);
+                                \draw<5-6>[RoyalBlue,line width=.5mm] (2\kmunitlength,0) -- (3\kmunitlength,0);
+                                \draw<5-6>[RoyalBlue,line width=.5mm] (2\kmunitlength,\kmunitlength) -- (3\kmunitlength,\kmunitlength);
+                                \draw<5-6>[RoyalBlue,line width=.5mm] (2\kmunitlength,2\kmunitlength) -- (3\kmunitlength,2\kmunitlength);
                                 \draw<7->[grp={RoyalBlue}{.9}{1.9}] [rounded corners=false] (2.05\kmunitlength,0) -- (2.05\kmunitlength,2) -- (2.95\kmunitlength,2) -- (2.95\kmunitlength,0) -- cycle;
                             }
                         \end{tikzpicture}
@@ -632,17 +632,17 @@
                         \karnaughmaptab{3}{$f(a,b,c)$}{{$a$}{$b$}{$c$}}{0110 0011}{
                             \draw[grp={RubineRed}{1.9}{.9}] (3.95\kmunitlength,.05) -- (3.95\kmunitlength,.95\kmunitlength) -- (2.95\kmunitlength,.95\kmunitlength) {[rounded corners=false] -- (2.95\kmunitlength,2\kmunitlength) -- (2.05\kmunitlength,2\kmunitlength)} -- (2.05\kmunitlength,1.95\kmunitlength) -- (1.05\kmunitlength,1.95\kmunitlength) -- (1.05\kmunitlength,1.05\kmunitlength) -- (2.05\kmunitlength,1.05\kmunitlength) {[rounded corners=false] -- (2.05\kmunitlength,0) -- (2.95\kmunitlength,0)} -- (2.95\kmunitlength,.05) -- cycle;
                             % dBnA
-                            \draw<2->[alt=<2>{RoyalBlue}{Dandelion},,thick] (2\kmunitlength,0) -- (2\kmunitlength,\kmunitlength);
-                            \draw<2->[alt=<2>{RoyalBlue}{Dandelion},thick] (4\kmunitlength,0) -- (4\kmunitlength,\kmunitlength);
+                            \draw<2->[alt=<2>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (2\kmunitlength,0) -- (2\kmunitlength,\kmunitlength);
+                            \draw<2->[alt=<2>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (4\kmunitlength,0) -- (4\kmunitlength,\kmunitlength);
                             % dCnA
-                            \draw<3->[alt=<3>{RoyalBlue}{Dandelion},thick] (\kmunitlength,\kmunitlength) -- (\kmunitlength,2\kmunitlength);
-                            \draw<3->[alt=<3>{RoyalBlue}{Dandelion},thick] (3\kmunitlength,\kmunitlength) -- (3\kmunitlength,2\kmunitlength);
+                            \draw<3->[alt=<3>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (\kmunitlength,\kmunitlength) -- (\kmunitlength,2\kmunitlength);
+                            \draw<3->[alt=<3>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (3\kmunitlength,\kmunitlength) -- (3\kmunitlength,2\kmunitlength);
                             % dAnBn~C
-                            \draw<4->[alt=<4>{RoyalBlue}{Dandelion},thick] (3\kmunitlength,0) -- (4\kmunitlength,0);
-                            \draw<4->[alt=<4>{RoyalBlue}{Dandelion},thick] (3\kmunitlength,\kmunitlength) -- (4\kmunitlength,\kmunitlength);
+                            \draw<4->[alt=<4>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (3\kmunitlength,0) -- (4\kmunitlength,0);
+                            \draw<4->[alt=<4>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (3\kmunitlength,\kmunitlength) -- (4\kmunitlength,\kmunitlength);
                             % dAn~BnC
-                            \draw<5->[alt=<5>{RoyalBlue}{Dandelion},thick] (\kmunitlength,\kmunitlength) -- (2\kmunitlength,\kmunitlength);
-                            \draw<5->[alt=<5>{RoyalBlue}{Dandelion},thick] (\kmunitlength,2\kmunitlength) -- (2\kmunitlength,2\kmunitlength);
+                            \draw<5->[alt=<5>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (\kmunitlength,\kmunitlength) -- (2\kmunitlength,\kmunitlength);
+                            \draw<5->[alt=<5>{RoyalBlue,line width=.5mm}{Dandelion,line width=.3mm}] (\kmunitlength,2\kmunitlength) -- (2\kmunitlength,2\kmunitlength);
                         }
                     \end{tikzpicture}
                     \caption{Karnaugh map of the expression}
